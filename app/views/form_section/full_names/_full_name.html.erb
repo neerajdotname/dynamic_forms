@@ -1,0 +1,5 @@
+<h3> <%= full_name.title %> </h3>
+<% full_name.text_elements.each do |text_ele| %>
+  <%= label_tag text_ele.label%>
+  <%= text_field_tag text_ele.label %>
+<% end %>

@@ -1,0 +1,4 @@
+<h3> <%= select.title %> </h3>
+<%= select_tag select.title,
+  options_from_collection_for_select(select.select_elements.first.form_element_options, 'label', 'value')
+%>

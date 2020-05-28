@@ -1,0 +1,19 @@
+<h1>Forms#index</h1>
+<table>
+  <header>
+    <th>
+      Id
+    </th>
+    <th> Title </th>
+    <th> User </th>
+  </header>
+  <tbody>
+    <% @forms.each do |form| %>
+    <tr>
+      <td><%= link_to form.id, form_path(form) %></td>
+      <td><%= form.title %></td>
+      <td><%= form.user.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

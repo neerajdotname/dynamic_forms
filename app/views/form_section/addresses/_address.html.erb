@@ -1,0 +1,5 @@
+<h3> <%= address.title %> </h3>
+<% address.text_elements.each do |text_ele| %>
+  <%= label_tag text_ele.label%>
+  <%= text_field_tag text_ele.label %>
+<% end %>
